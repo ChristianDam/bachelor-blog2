@@ -15,7 +15,7 @@ module.exports = {
     {
       label: "About the project",
       path: "/pages/about"
-    },
+    }
   ],
   author: {
     name: "Simon and Christian",
@@ -24,7 +24,11 @@ module.exports = {
       "In collaboration with Danske Bank, we are writing a bachelors project on how to rethink and innovate how people experience and do authentication.",
     contacts: {
       email: "#",
+      telegram: "#",
+      twitter: "#",
       github: "#",
+      rss: "#",
+      vkontakte: "#"
     }
   }
 };

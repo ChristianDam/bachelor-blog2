@@ -23,7 +23,7 @@ export const PureSidebar = ({ data, isIndex }) => {
   );
 };
 
-export const Sidebar = (props) => (
+export const Sidebar = props => (
   <StaticQuery
     query={graphql`
       query SidebarQuery {
@@ -40,16 +40,20 @@ export const Sidebar = (props) => (
               name
               photo
               bio
-              contacts {       
+              contacts {
+                twitter
+                telegram
                 github
                 email
+                rss
+                vkontakte
               }
             }
           }
         }
       }
     `}
-    render={(data) => <PureSidebar {...props} data={data}/>}
+    render={data => <PureSidebar {...props} data={data} />}
   />
 );
 
